@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://hoteldakshkhatu.com/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://hoteldakshkhatu.com/shyam-baba.jpg</image:loc>
+      <image:title>Shree Khatu Shyam Ji Shringar Darshan - Hotel Daksh Khatu</image:title>
+      <image:caption>Hotel Daksh is just 10 minutes walk from Shree Khatu Shyam Ji Temple</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hoteldakshkhatu.com/rooms/deluxe-double.jpg</image:loc>
+      <image:title>Deluxe Double Room (2 Adults + 1 Child) - Hotel Daksh</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://hoteldakshkhatu.com/rooms/triple-room.jpg</image:loc>
+      <image:title>Triple Room (1 Double + 1 Single Bed) - Hotel Daksh</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://hoteldakshkhatu.com/rooms/deluxe-family.jpg</image:loc>
+      <image:title>Deluxe Family Room (2 Large Double Beds) - Hotel Daksh</image:title>
+    </image:image>
+  </url>
+</urlset>
