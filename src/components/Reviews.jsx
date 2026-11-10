@@ -12,8 +12,8 @@ const Reviews = () => {
       tag: { hi: 'एकादशी मेला दर्शन', en: 'Ekadashi Mela Darshan' },
       rating: 5,
       review: {
-        hi: 'होटल दक्ष में रुकना हमारी खाटू यात्रा का सबसे अच्छा निर्णय था। मुख्य मंदिर मात्र 10 मिनट की सुखद पैदल दूरी पर है। प्रातः मंगला आरती के समय 4:30 बजे खौलता गर्म पानी उपलब्ध था। पार्किंग अत्यंत सुरक्षित है। जय श्री श्याम!',
-        en: 'Staying at Hotel Daksh was the best decision for our Khatu pilgrimage. The main Mandir is barely a 10-minute pleasant walk. Piping hot water was ready at 4:30 AM before Mangla Aarti. Parking is exceptionally secure. Jai Shree Shyam!'
+        hi: 'होटल दक्ष में रुकना हमारी खाटू यात्रा का सबसे अच्छा निर्णय था। मुख्य मंदिर मात्र 500 मीटर की सुखद पैदल दूरी पर है। प्रातः मंगला आरती के समय 4:30 बजे खौलता गर्म पानी उपलब्ध था। पार्किंग अत्यंत सुरक्षित है। जय श्री श्याम!',
+        en: 'Staying at Hotel Daksh was the best decision for our Khatu pilgrimage. The main Mandir is barely a 500-meter pleasant walk. Piping hot water was ready at 4:30 AM before Mangla Aarti. Parking is exceptionally secure. Jai Shree Shyam!'
       },
     },
     {
@@ -46,16 +46,14 @@ const Reviews = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 श्याम भक्त अनुभव', '🦚 Devotee Experiences')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('सच्चे अनुभव', 'Verified Reviews')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('श्याम भक्त अनुभव', 'Guest Reflections')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('भक्तों का विश्वास व', 'Pilgrim Trust &')} <span className="sacred-gold-text">{t('आशीर्वाद', 'Blessings')}</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto mb-8">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto mb-6 leading-relaxed">
             {t(
               'हज़ारों श्याम भक्तों ने खाटू धाम की अपनी पवित्र यात्रा में होटल दक्ष को अपना विश्राम स्थल बनाया है।',
               'Thousands of Shyam pilgrims make Hotel Daksh their peaceful haven on their holy visit to Khatu Dham.'

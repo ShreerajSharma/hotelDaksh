@@ -22,10 +22,10 @@ const Amenities = () => {
       tag: { hi: 'सान्निध्य (Proximity)', en: 'Prime Proximity' },
       title: { hi: 'मंदिर से निकटतम सुगम मार्ग', en: 'Direct Walk to Temple' },
       description: {
-        hi: 'आलोदा चौराहा पर स्थित होने से मुख्य मंदिर तक 10 मिनट की पैदल दूरी व 3 मिनट में ई-रिक्शा से पहुँच।',
-        en: 'Situated right at Aloda Choraha — 10 min walk or 3 min E-rickshaw directly to the main Mandir.'
+        hi: 'आलोदा चौराहा पर स्थित होने से मुख्य मंदिर तक मात्र 500 मीटर की सुखद पैदल दूरी व 3 मिनट में ई-रिक्शा से पहुँच।',
+        en: 'Situated right at Aloda Choraha — just 500m walk or 3 min E-rickshaw directly to the main Mandir.'
       },
-      stat: { hi: 'मात्र 10 मिनट दूरी', en: 'Just 10 Min Walk' },
+      stat: { hi: 'मात्र 500m दूरी', en: 'Just 500m Walk' },
       span: 'md:col-span-4'
     },
     {
@@ -93,19 +93,17 @@ const Amenities = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 यात्री सुविधाएं', '🦚 Pilgrim Amenities')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('निःस्वार्थ सत्कार', 'Selfless Hospitality')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('अतिथि सत्कार एवं सुविधाएं', 'Sanctuary Facilities')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('आपकी यात्रा को सुखद बनाने वाली सुविधाएं', 'Thoughtfully Curated for Your Holy Pilgrimage')} <br />
             <span className="font-script italic text-2xl sm:text-4xl text-amber-800 font-normal">
               Every Comfort for Your Sacred Visit
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto leading-relaxed">
             {t(
               'होटल दक्ष में प्रत्येक सुविधा इस प्रकार तैयार की गई है कि आपको घर जैसा अपनत्व और देवतुल्य आदर प्राप्त हो।',
               'Every amenity at Hotel Daksh is designed so you experience the warmth of home and highest spiritual comfort.'
@@ -114,13 +112,13 @@ const Amenities = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
           {bentoAmenities.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className={`${item.span} bg-[#faf8f5] rounded-[28px] p-7 sm:p-8 flex flex-col justify-between relative group border border-amber-600/20 shadow-md shadow-amber-950/5 hover:shadow-xl hover:border-amber-500/40 transition-all duration-300`}
+                className={`${item.span} bg-[#faf8f5] rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 flex flex-col justify-between relative group border border-amber-600/15 shadow-sm shadow-amber-950/5 hover:shadow-lg hover:border-amber-500/40 transition-all duration-300`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-5">

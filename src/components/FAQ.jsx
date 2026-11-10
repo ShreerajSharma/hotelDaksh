@@ -59,16 +59,14 @@ const FAQ = ({ onOpenBooking }) => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🪔 अक्सर पूछे जाने वाले प्रश्न', '🪔 Frequently Asked Questions')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('यात्री मार्गदर्शिका', 'Pilgrim FAQ Guide')}</span>
-          </div>
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('अक्सर पूछे जाने वाले प्रश्न', 'Guest Inquiries & Clarifications')}
+          </p>
           <h2 className="font-temple text-3xl sm:text-4xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('खाटू यात्रा व आवास से जुड़े प्रश्न', 'Everything About Your Khatu Stay & Darshan')}
           </h2>
-          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-lg mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-lg mx-auto leading-relaxed">
             {t(
               'आपके सुखद व तनावमुक्त खाटू दर्शन हेतु सभी महत्वपूर्ण जानकारियाँ एक स्थान पर।',
               'Key guidance and clear answers for a serene, stress-free holy pilgrimage to Khatu Dham.'

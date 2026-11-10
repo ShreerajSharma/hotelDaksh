@@ -17,8 +17,8 @@ const Footer = ({ onOpenBooking }) => {
         <div className="pb-8 mb-10 border-b border-amber-600/15 text-[11px] text-[#7c6a5d] space-y-2 leading-relaxed">
           <p>
             {t(
-              '१. होटल दक्ष आलोदा चौराहा, खाटूश्यामजी पर स्थित है। यहाँ से श्री खाटू श्याम जी मुख्य मंदिर का पावन मार्ग मात्र 800 मीटर (लगभग 10 मिनट की सुखद पदयात्रा) है।',
-              '1. Hotel Daksh is situated at Aloda Choraha, Khatu Shyam Ji — just 800 meters (approx. 10-minute pleasant walk) from the Holy Mandir.'
+              '१. होटल दक्ष आलोदा चौराहा, खाटूश्यामजी पर स्थित है। यहाँ से श्री खाटू श्याम जी मुख्य मंदिर का पावन मार्ग मात्र 500 मीटर (लगभग 5 से 7 मिनट की सुखद पदयात्रा) है।',
+              '1. Hotel Daksh is situated at Aloda Choraha, Khatu Shyam Ji — just 500 meters (approx. 5-7 minutes pleasant walk) from the Holy Mandir.'
             )}
           </p>
           <p>

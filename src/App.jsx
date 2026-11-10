@@ -56,7 +56,7 @@ function App() {
       />
 
       {/* Spiritual Mobile Floating Quick Action Capsule (White Theme) */}
-      <div className="fixed bottom-4 left-4 right-4 z-40 sm:hidden flex items-center gap-2 p-1.5 rounded-full bg-white/95 backdrop-blur-xl border border-amber-500/40 shadow-2xl shadow-amber-950/20">
+      <div className="fixed bottom-4 inset-x-3 z-40 sm:hidden flex items-center gap-2 p-1.5 rounded-full bg-white/95 backdrop-blur-xl border border-amber-500/40 shadow-2xl shadow-amber-950/20 max-w-sm mx-auto">
         <a 
           href="tel:+919876543210"
           className="flex-1 py-2.5 px-3 rounded-full bg-[#faf8f5] text-[#1c1512] font-bold flex items-center justify-center gap-1.5 text-xs tracking-tight border border-amber-600/25 shadow-sm"

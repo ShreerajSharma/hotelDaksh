@@ -53,8 +53,8 @@ const Gallery = () => {
       category: 'devotion',
       title: { hi: 'श्री खाटू श्याम जी अलौकिक शृंगार दर्शन', en: 'Lord Shri Khatu Shyam Ji Holy Darshan' },
       subtitle: {
-        hi: 'होटल दक्ष से मात्र 10 मिनट की सुखद पैदल दूरी पर पावन दरबार',
-        en: 'Just 10 minutes pleasant walk from Hotel Daksh'
+        hi: 'होटल दक्ष से मात्र 500 मीटर की सुखद पैदल दूरी पर पावन दरबार',
+        en: 'Just 500m pleasant walk from Hotel Daksh'
       },
       url: '/shyam-baba.jpg'
     },
@@ -86,37 +86,37 @@ const Gallery = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 चित्र वीथिका', '🦚 Photo Gallery')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('होटल दक्ष दर्शन', 'Hotel Daksh Showcase')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('चित्र वीथिका', 'Visual Showcase')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('होटल की', 'Visuals of')} <span className="sacred-gold-text">{t('सुंदर झलकियाँ', 'Hotel Daksh')}</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto leading-relaxed">
             {t(
               'हमारे स्वच्छ कक्ष, सुंदर रिसेप्शन लाउंज, सुरक्षित पार्किंग और पवित्र खाटू नगरी की छटा का अवलोकन करें।',
               'Explore our immaculate suites, warm reception lounge, guarded parking, and the serene essence of Khatu Dham.'
             )}
           </p>
 
-          {/* Filter Pills */}
-          <div className="inline-flex p-1 rounded-2xl sm:rounded-full bg-[#f4efe6] border border-amber-500/25 mt-8 shadow-inner flex-wrap justify-center gap-1 max-w-full">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveFilter(cat.id)}
-                className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                  activeFilter === cat.id
-                    ? 'btn-kesar-gold text-[#1c1512] shadow-md'
-                    : 'text-[#5c4a3e] hover:text-[#1c1512]'
-                }`}
-              >
-                {t(cat.label)}
-              </button>
-            ))}
+          {/* Filter Pills (Horizontal scrollable on mobile) */}
+          <div className="w-full max-w-full overflow-x-auto no-scrollbar py-2 mt-4 flex justify-start sm:justify-center">
+            <div className="inline-flex items-center gap-1 p-1 rounded-full bg-[#f3ede2] border border-amber-600/15 shadow-inner">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveFilter(cat.id)}
+                  className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                    activeFilter === cat.id
+                      ? 'btn-kesar-gold text-[#1c1512] shadow-sm'
+                      : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                  }`}
+                >
+                  {t(cat.label)}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 

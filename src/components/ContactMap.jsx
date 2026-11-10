@@ -12,16 +12,14 @@ const ContactMap = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 गूगल मैप्स व संपर्क', '🦚 Location & Contact')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('आलोदा चौराहा, खाटूश्यामजी', 'Aloda Choraha, Khatu')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('स्थान एवं सुगम संपर्क', 'Location & Navigation')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('होटल दक्ष तक', 'Seamless Directions to')} <span className="sacred-gold-text">{t('सुगम मार्ग', 'Hotel Daksh')}</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto leading-relaxed">
             {t(
               'आलोदा चौराहा, कृष्णा कॉलोनी, बीएसएनएल टावर के पास, खाटूश्यामजी। रींगस जंक्शन (17 किमी) अथवा हाईवे से सीधा, जाम-मुक्त सुगम प्रवेश।',
               'Aloda Choraha, Krishna Colony, Near BSNL Tower, Khatu Shyam Ji. Direct, jam-free access from Ringas Junction (17 km) or highway.'

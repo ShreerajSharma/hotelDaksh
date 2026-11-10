@@ -135,7 +135,7 @@ const TempleGuide = () => {
   const sacredSpots = [
     {
       title: { hi: 'श्री खाटू श्याम जी मुख्य मंदिर', en: 'Shri Khatu Shyam Ji Main Temple' },
-      distance: { hi: '10 मिनट पैदल (800 मीटर)', en: '10 Min Walk (800m)' },
+      distance: { hi: 'मात्र 500 मीटर (5-7 मिनट पैदल)', en: 'Just 500m Walk (5-7 mins)' },
       desc: {
         hi: 'शीश के दानी लखदातार भगवान श्री श्याम का अलौकिक निज मंदिर।',
         en: 'The divine sanctum sanctorum of Lord Khatu Shyam Ji (Barbareek).'
@@ -175,48 +175,48 @@ const TempleGuide = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 दर्शन मार्गदर्शिका', '🦚 Pilgrimage Guide')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('आरती समय सारणी', 'Aarti Timetable')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('दर्शन व पूजा समय सारणी', 'Temple Rituals & Timetable')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('आरती समय एवं', 'Daily Aarti Timings &')} <span className="sacred-gold-text">{t('खाटू धाम दर्शन', 'Khatu Dham Guide')}</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto leading-relaxed">
             {t(
               'बाबा श्याम के दर्शन, श्याम कुंड स्नान एवं आरती के समय का ध्यान रखकर अपनी यात्रा को मंगलमय बनाएं।',
               'Plan your holy pilgrimage around Baba Shyam’s sacred Aarti timings and holy Shyam Kund rituals.'
             )}
           </p>
 
-          {/* Season Segmented Control */}
-          <div className="inline-flex p-1 rounded-2xl sm:rounded-full bg-[#f4efe6] border border-amber-500/25 mt-8 shadow-inner flex-wrap justify-center gap-1 max-w-full">
-            <button
-              onClick={() => setSeason('winter')}
-              className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                season === 'winter' ? 'btn-kesar-gold text-[#1c1512] shadow-md' : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              {t('शीतकालीन (अक्टूबर – मार्च)', 'Winter (Oct – Mar)')}
-            </button>
-            <button
-              onClick={() => setSeason('summer')}
-              className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                season === 'summer' ? 'btn-kesar-gold text-[#1c1512] shadow-md' : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              {t('ग्रीष्मकालीन (अप्रैल – सितंबर)', 'Summer (Apr – Sep)')}
-            </button>
-            <button
-              onClick={() => setSeason('mela')}
-              className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                season === 'mela' ? 'btn-kesar-gold text-[#1c1512] shadow-md' : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              {t('एकादशी व मेला (24h अखंड)', 'Ekadashi & Fair (24h Open)')}
-            </button>
+          {/* Season Segmented Control (Smooth horizontal scroll on mobile) */}
+          <div className="w-full max-w-full overflow-x-auto no-scrollbar py-2 mt-4 flex justify-start sm:justify-center">
+            <div className="inline-flex items-center gap-1 p-1 rounded-full bg-[#f3ede2] border border-amber-600/15 shadow-inner">
+              <button
+                onClick={() => setSeason('winter')}
+                className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  season === 'winter' ? 'btn-kesar-gold text-[#1c1512] shadow-sm' : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                {t('शीतकालीन (अक्टूबर – मार्च)', 'Winter (Oct – Mar)')}
+              </button>
+              <button
+                onClick={() => setSeason('summer')}
+                className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  season === 'summer' ? 'btn-kesar-gold text-[#1c1512] shadow-sm' : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                {t('ग्रीष्मकालीन (अप्रैल – सितंबर)', 'Summer (Apr – Sep)')}
+              </button>
+              <button
+                onClick={() => setSeason('mela')}
+                className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  season === 'mela' ? 'btn-kesar-gold text-[#1c1512] shadow-sm' : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                {t('एकादशी व मेला (24h अखंड)', 'Ekadashi & Fair (24h Open)')}
+              </button>
+            </div>
           </div>
         </div>
 

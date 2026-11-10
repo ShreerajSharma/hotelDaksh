@@ -134,16 +134,14 @@ const WhyChooseUs = ({ onOpenBooking }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>⚖️ {t('निष्पक्ष तुलना', 'Objective Comparison')}</span>
-            <span className="text-amber-500">•</span>
-            <span>Why Pilgrims Recommend Hotel Daksh</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
-            {t('खाटू में होटल दक्ष ही क्यों चुनें?', 'Why Choose Hotel Daksh in Khatu?')}
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('सच्ची तुलना व विशेषताएं', 'The Daksh Advantage')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
+            {t('खाटू में होटल दक्ष ही क्यों चुनें?', 'Why Devotees Choose Hotel Daksh')}
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-2xl mx-auto leading-relaxed">
             {t(
               'खाटू यात्रा में सही होटल का चयन आपकी यात्रा को सफल या कठिन बना सकता है। जानिए क्यों हज़ारों भक्त हर बार होटल दक्ष को ही अपनी पहली पसंद बनाते हैं:',
               'Selecting the right hotel can make your pilgrimage seamless and peaceful. Here is why thousands of devotees choose Hotel Daksh every time:'
@@ -152,20 +150,17 @@ const WhyChooseUs = ({ onOpenBooking }) => {
         </div>
 
         {/* Mobile View: Comparison Cards (Phone optimized) */}
-        <div className="block md:hidden space-y-4 mb-12">
-          <div className="text-center text-xs text-amber-900 font-bold mb-3 bg-amber-500/10 py-2 px-3 rounded-full border border-amber-500/20">
-            {t('⚖️ होटल दक्ष और अन्य होटलों की सीधी तुलना', '⚖️ Hotel Daksh vs Other Khatu Hotels Comparison')}
-          </div>
+        <div className="block md:hidden space-y-3.5 mb-10">
           {comparisonData.map((row, idx) => {
             const IconComponent = row.icon;
             return (
               <div 
                 key={idx}
-                className="bg-[#faf8f5] rounded-2xl p-4 border border-amber-500/25 shadow-sm space-y-3"
+                className="bg-[#faf8f5] rounded-2xl p-4 border border-amber-600/15 shadow-xs space-y-2.5"
               >
-                <div className="flex items-center gap-2 pb-2 border-b border-amber-600/15">
-                  <div className="w-8 h-8 rounded-xl bg-amber-500/15 flex items-center justify-center text-amber-800 shrink-0">
-                    <IconComponent className="w-4 h-4" />
+                <div className="flex items-center gap-2 pb-2 border-b border-amber-600/10">
+                  <div className="w-7 h-7 rounded-lg bg-amber-500/15 flex items-center justify-center text-amber-800 shrink-0">
+                    <IconComponent className="w-3.5 h-3.5" />
                   </div>
                   <div>
                     <h4 className="font-bold text-xs text-[#1c1512]">{t(row.feature)}</h4>
@@ -173,23 +168,23 @@ const WhyChooseUs = ({ onOpenBooking }) => {
                 </div>
 
                 {/* Hotel Daksh Advantage */}
-                <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-500/30">
-                  <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-emerald-900 mb-1">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                <div className="p-3 rounded-xl bg-white border border-emerald-500/30 shadow-xs">
+                  <div className="flex items-center gap-1.5 text-[11px] font-extrabold text-emerald-800 mb-1">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>होटल दक्ष (Hotel Daksh)</span>
                   </div>
-                  <p className="text-xs text-emerald-950 font-medium pl-5 leading-relaxed">
+                  <p className="text-xs text-[#2c221e] font-medium pl-5 leading-relaxed">
                     {t(row.hotelDaksh)}
                   </p>
                 </div>
 
                 {/* Other Hotels Limitation */}
-                <div className="p-2.5 rounded-xl bg-white border border-red-500/20">
-                  <div className="flex items-center gap-1.5 text-[11px] font-bold text-red-800 mb-0.5">
-                    <X className="w-3.5 h-3.5 text-red-500 shrink-0" />
-                    <span>{t('अन्य सामान्य होटल', 'Other Standard Hotels')}</span>
+                <div className="p-2.5 rounded-xl bg-stone-50 border border-stone-200">
+                  <div className="flex items-center gap-1.5 text-[10px] font-bold text-stone-600 mb-0.5">
+                    <X className="w-3 h-3 text-red-500 shrink-0" />
+                    <span>{t('अन्य सामान्य होटल / लॉज', 'Other Standard Hotels')}</span>
                   </div>
-                  <p className="text-xs text-[#6c5a4d] pl-5 leading-relaxed">
+                  <p className="text-[11px] text-[#6c5a4d] pl-4 leading-relaxed">
                     {t(row.others)}
                   </p>
                 </div>
@@ -304,7 +299,7 @@ const WhyChooseUs = ({ onOpenBooking }) => {
             </div>
             <button
               onClick={() => onOpenBooking()}
-              className="btn-kesar-gold px-6 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 cursor-pointer shadow-md shrink-0"
+              className="w-full sm:w-auto btn-kesar-gold px-6 py-3 rounded-full text-xs font-bold flex items-center justify-center gap-2 cursor-pointer shadow-md shrink-0"
             >
               <span>{t('सीधा कमरा बुक करें (Zero Commission)', 'Direct Room Reservation (Zero Commission)')}</span>
             </button>

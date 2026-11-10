@@ -13,62 +13,60 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>{t('🦚 पावन धाम', '🦚 Sacred Sanctuary')}</span>
-            <span className="text-amber-500">•</span>
-            <span>{t('होटल दक्ष परिचय', 'About Hotel Daksh')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] leading-tight mb-5">
+        <div className="max-w-3xl mb-12 sm:mb-16">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('श्री खाटू धाम तीर्थ', 'Heritage & Sanctuary')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] leading-tight mb-4">
             {t('भक्ति, सेवा और समर्पण।', 'Devotion, Service & Pure Serenity.')} <br />
             <span className="font-script italic text-2xl sm:text-4xl text-amber-800 font-normal">
               A Sacred Abode for Every Shyam Devotee
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] leading-relaxed">
+          <p className="text-xs sm:text-base text-[#5c4a3e] leading-relaxed">
             {t(
               'होटल दक्ष का उद्देश्य खाटू श्याम जी आने वाले प्रत्येक श्याम भक्त की यात्रा को सुगम, आनंददायक व तनावमुक्त बनाना है। आलोदा चौराहा पर स्थित होने के कारण यहाँ से मुख्य मंदिर व श्याम कुंड पहुँचना अत्यंत सरल है।',
-              'Hotel Daksh is dedicated to making every Shyam devotee’s pilgrimage seamless, comfortable, and spiritually fulfilling. Situated right at Aalpda Choraha, accessing the Main Temple and sacred Shyam Kund is effortless and quick.'
+              'Hotel Daksh is dedicated to making every Shyam devotee’s pilgrimage seamless, comfortable, and spiritually fulfilling. Situated right at Aloda Choraha, accessing the Main Temple and sacred Shyam Kund is effortless and quick.'
             )}
           </p>
         </div>
 
         {/* Bento Narrative Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-stretch">
           
           {/* Main Visual Feature Card (7 cols) */}
-          <div className="md:col-span-7 bg-white rounded-[32px] overflow-hidden p-8 sm:p-10 flex flex-col justify-between relative group border border-amber-600/20 shadow-lg shadow-amber-950/5">
+          <div className="md:col-span-7 bg-white rounded-[24px] sm:rounded-[32px] overflow-hidden p-6 sm:p-10 flex flex-col justify-between relative group border border-amber-600/20 shadow-lg shadow-amber-950/5">
             <div className="relative z-10 max-w-lg">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-amber-800 block mb-2">
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-amber-800 block mb-1.5">
                 {t('अद्वितीय पावन स्थिति (Sacred Location)', 'Prime Sacred Location')}
               </span>
-              <h3 className="font-temple text-2xl sm:text-3xl font-bold text-[#1c1512] mb-3">
+              <h3 className="font-temple text-xl sm:text-3xl font-bold text-[#1c1512] mb-2 sm:mb-3">
                 {t('मंदिर से मात्र 500 मीटर की पैदल दूरी।', 'Just 500 Meters Walk from Temple.')}
               </h3>
-              <p className="text-xs sm:text-sm text-[#5c4a3e] leading-relaxed mb-6 font-normal">
+              <p className="text-xs sm:text-sm text-[#5c4a3e] leading-relaxed mb-5 font-normal">
                 {t(
                   'भीड़भाड़ और जाम से दूर, आलोदा चौराहे पर स्थित होटल दक्ष से आप प्रातः मंगला आरती, शृंगार आरती अथवा सायंकालीन भोग आरती में बिना किसी असुविधा के पैदल अथवा ई-रिक्शा द्वारा पहुँच सकते हैं।',
                   'Located peacefully at Aloda Choraha away from temple rush and gridlocks. Reach early morning Mangla Aarti, Shringar Aarti, or evening Bhog Aarti effortlessly by walking or quick E-rickshaws.'
                 )}
               </p>
               
-              <div className="grid grid-cols-3 gap-3 pt-4 border-t border-amber-600/15 text-center">
-                <div className="p-2 bg-[#faf8f5] rounded-xl border border-amber-500/15">
-                  <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('500 मीटर', '500m')}</div>
-                  <div className="text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('मंदिर (500 meter)', 'Temple (500m)')}</div>
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-4 border-t border-amber-600/15 text-center">
+                <div className="p-2 sm:p-2.5 bg-[#faf8f5] rounded-xl border border-amber-500/15">
+                  <div className="font-temple text-base sm:text-xl font-bold text-amber-800">{t('500m', '500m')}</div>
+                  <div className="text-[9px] sm:text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('मंदिर', 'Temple')}</div>
                 </div>
-                <div className="p-2 bg-[#faf8f5] rounded-xl border border-amber-500/15">
-                  <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('12 मिनट', '12 Mins')}</div>
-                  <div className="text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('श्याम कुंड (Snan)', 'Shyam Kund (Holy Bath)')}</div>
+                <div className="p-2 sm:p-2.5 bg-[#faf8f5] rounded-xl border border-amber-500/15">
+                  <div className="font-temple text-base sm:text-xl font-bold text-amber-800">{t('12 Min', '12 Mins')}</div>
+                  <div className="text-[9px] sm:text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('श्याम कुंड', 'Shyam Kund')}</div>
                 </div>
-                <div className="p-2 bg-[#faf8f5] rounded-xl border border-amber-500/15">
-                  <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('17 किमी', '17 KM')}</div>
-                  <div className="text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('रींगस जंक्शन', 'Ringas Junction')}</div>
+                <div className="p-2 sm:p-2.5 bg-[#faf8f5] rounded-xl border border-amber-500/15">
+                  <div className="font-temple text-base sm:text-xl font-bold text-amber-800">{t('17 KM', '17 KM')}</div>
+                  <div className="text-[9px] sm:text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('रींगस जंक्शन', 'Ringas Jcn')}</div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 rounded-2xl overflow-hidden aspect-[16/9] border border-amber-500/20 relative shadow-inner">
+            <div className="mt-6 sm:mt-8 rounded-2xl overflow-hidden aspect-[16/9] border border-amber-500/20 relative shadow-inner">
               <img 
                 src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000" 
                 alt="Hotel Daksh Interior" 
@@ -79,15 +77,15 @@ const About = () => {
           </div>
 
           {/* Right Column Bento Cards (5 cols) */}
-          <div className="md:col-span-5 flex flex-col gap-6">
+          <div className="md:col-span-5 flex flex-col gap-5 sm:gap-6">
             
             {/* Card 1: Rajasthani Devotee Care */}
-            <div className="bg-white rounded-[32px] p-8 flex-1 flex flex-col justify-between border border-amber-600/20 shadow-lg shadow-amber-950/5">
+            <div className="bg-white rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 flex-1 flex flex-col justify-between border border-amber-600/20 shadow-lg shadow-amber-950/5">
               <div>
-                <div className="w-10 h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 mb-5">
+                <div className="w-10 h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 mb-4 sm:mb-5">
                   <HeartHandshake className="w-5 h-5" />
                 </div>
-                <h4 className="font-temple text-xl font-bold text-[#1c1512] mb-2">
+                <h4 className="font-temple text-lg sm:text-xl font-bold text-[#1c1512] mb-2">
                   {t('अतिथि देवो भव • आत्मीय सत्कार', 'Atithi Devo Bhava • Devoted Hospitality')}
                 </h4>
                 <p className="text-xs sm:text-sm text-[#5c4a3e] leading-relaxed font-normal">
@@ -98,19 +96,19 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="pt-5 border-t border-amber-600/15 mt-6 flex items-center gap-2 text-xs text-amber-800 font-bold">
-                <Sparkles className="w-4 h-4 text-amber-600" />
+              <div className="pt-4 sm:pt-5 border-t border-amber-600/15 mt-5 sm:mt-6 flex items-center gap-2 text-xs text-amber-800 font-bold">
+                <Sparkles className="w-4 h-4 text-amber-600 shrink-0" />
                 <span>{t('24/7 समर्पित यात्री सहायता एवं मार्गदर्शन', '24/7 Dedicated Devotee Concierge & Guidance')}</span>
               </div>
             </div>
 
             {/* Card 2: Purity and Sattvik Environment */}
-            <div className="bg-white rounded-[32px] p-8 flex-1 flex flex-col justify-between border border-amber-600/20 shadow-lg shadow-amber-950/5">
+            <div className="bg-white rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 flex-1 flex flex-col justify-between border border-amber-600/20 shadow-lg shadow-amber-950/5">
               <div>
-                <div className="w-10 h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 mb-5">
+                <div className="w-10 h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 mb-4 sm:mb-5">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
-                <h4 className="font-temple text-xl font-bold text-[#1c1512] mb-2">
+                <h4 className="font-temple text-lg sm:text-xl font-bold text-[#1c1512] mb-2">
                   {t('पवित्रता, शांति एवं स्वच्छता', 'Purity, Peace & Supreme Hygiene')}
                 </h4>
                 <p className="text-xs sm:text-sm text-[#5c4a3e] leading-relaxed font-normal">
@@ -121,8 +119,8 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="pt-5 border-t border-amber-600/15 mt-6 flex items-center gap-2 text-xs text-emerald-700 font-bold">
-                <Check className="w-4 h-4 text-emerald-600" />
+              <div className="pt-4 sm:pt-5 border-t border-amber-600/15 mt-5 sm:mt-6 flex items-center gap-2 text-xs text-emerald-700 font-bold">
+                <Check className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>{t('100% शुद्ध सात्विक भोजनालय (लहसुन-प्याज रहित विकल्प)', '100% Pure Sattvik Kitchen (Jain / No Onion-Garlic available)')}</span>
               </div>
             </div>

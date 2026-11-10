@@ -107,67 +107,67 @@ const Rooms = ({ onOpenBooking }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full spiritual-pill text-xs font-bold mb-4 shadow-sm">
-            <span>🦚 {t('पवित्र आवास', 'Sacred Accommodations')}</span>
-            <span className="text-amber-500">•</span>
-            <span>MakeMyTrip {t('प्रमाणित श्रेणियां', 'Verified Categories')}</span>
-          </div>
-          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <p className="text-[11px] font-bold tracking-[0.22em] uppercase text-amber-800/90 mb-2 font-sans">
+            {t('पवित्र विश्राम कक्ष', 'Suites & Living Spaces')}
+          </p>
+          <h2 className="font-temple text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1c1512] mb-3">
             {t('दर्शनोपरांत परम शांति।', 'Serene Comfort After Darshan.')} <br />
             <span className="font-script italic text-2xl sm:text-4xl text-amber-800 font-normal">
               Comfort Tailored for Shyam Devotees
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-[#5c4a3e] max-w-xl mx-auto">
+          <p className="text-xs sm:text-sm text-[#5c4a3e] max-w-xl mx-auto leading-relaxed">
             {t(
               'बाबा श्याम के दर्शन के बाद आपके सुखद विश्राम के लिए आधुनिक सुख-सुविधाओं से सुसज्जित कक्ष। सभी कमरों में 24/7 गर्म पानी, फ्री गेटेड पार्किंग व वाई-फाई शामिल है।',
               'Well-appointed air-conditioned rooms tailored for a tranquil stay after holy darshan. Includes 24/7 hot water geyser, free gated parking, and high-speed Wi-Fi.'
             )}
           </p>
 
-          {/* Segmented Filter Pills */}
-          <div className="inline-flex p-1 rounded-full bg-[#f4efe6] border border-amber-500/25 mt-8 shadow-inner flex-wrap justify-center gap-1">
-            <button
-              onClick={() => setActiveTab('all')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                activeTab === 'all'
-                  ? 'btn-kesar-gold text-[#1c1512] shadow-md'
-                  : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              {t('सभी कक्ष (All Rooms)', 'All Rooms')}
-            </button>
-            <button
-              onClick={() => setActiveTab('couple')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                activeTab === 'couple'
-                  ? 'btn-kesar-gold text-[#1c1512] shadow-md'
-                  : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              1. Deluxe Double (2+1)
-            </button>
-            <button
-              onClick={() => setActiveTab('family')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                activeTab === 'family'
-                  ? 'btn-kesar-gold text-[#1c1512] shadow-md'
-                  : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              2. Triple Room
-            </button>
-            <button
-              onClick={() => setActiveTab('luxury')}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                activeTab === 'luxury'
-                  ? 'btn-kesar-gold text-[#1c1512] shadow-md'
-                  : 'text-[#5c4a3e] hover:text-[#1c1512]'
-              }`}
-            >
-              3. Deluxe Family Room
-            </button>
+          {/* Luxury Horizontal Filter Bar (Scrollable on mobile without wrapping) */}
+          <div className="w-full max-w-full overflow-x-auto no-scrollbar py-2 mt-4 flex justify-start sm:justify-center">
+            <div className="inline-flex items-center gap-1 p-1 rounded-full bg-[#f3ede2] border border-amber-600/15 shadow-inner">
+              <button
+                onClick={() => setActiveTab('all')}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  activeTab === 'all'
+                    ? 'btn-kesar-gold text-[#1c1512] shadow-sm'
+                    : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                {t('सभी कक्ष', 'All Suites')}
+              </button>
+              <button
+                onClick={() => setActiveTab('couple')}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  activeTab === 'couple'
+                    ? 'btn-kesar-gold text-[#1c1512] shadow-sm'
+                    : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                Deluxe Double (2+1)
+              </button>
+              <button
+                onClick={() => setActiveTab('family')}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  activeTab === 'family'
+                    ? 'btn-kesar-gold text-[#1c1512] shadow-sm'
+                    : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                Triple Room (3 Beds)
+              </button>
+              <button
+                onClick={() => setActiveTab('luxury')}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                  activeTab === 'luxury'
+                    ? 'btn-kesar-gold text-[#1c1512] shadow-sm'
+                    : 'text-[#6c5a4d] hover:text-[#1c1512]'
+                }`}
+              >
+                Family Suite (4-6)
+              </button>
+            </div>
           </div>
         </div>
 
@@ -276,16 +276,16 @@ const Rooms = ({ onOpenBooking }) => {
         </div>
 
         {/* Group / Bus Yatris Callout */}
-        <div className="mt-12 bg-[#faf8f5] rounded-[28px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-amber-600/25 shadow-md">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 shrink-0 shadow-sm">
-              <Users className="w-6 h-6" />
+        <div className="mt-12 bg-[#faf8f5] rounded-[24px] sm:rounded-[28px] p-5 sm:p-8 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-5 border border-amber-600/20 shadow-md">
+          <div className="flex items-start sm:items-center gap-3.5">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-800 shrink-0 shadow-sm mt-0.5 sm:mt-0">
+              <Users className="w-5 h-5 sm:w-6 sm:h-6" />
             </div>
             <div>
-              <h4 className="font-temple text-lg font-bold text-[#1c1512]">
+              <h4 className="font-temple text-base sm:text-lg font-bold text-[#1c1512]">
                 {t('बस यात्रा अथवा श्याम भक्त मंडली के साथ आ रहे हैं?', 'Traveling with a Tourist Bus or Devotee Group?')}
               </h4>
-              <p className="text-xs text-[#5c4a3e] font-medium mt-0.5">
+              <p className="text-xs text-[#5c4a3e] font-medium mt-1 leading-relaxed">
                 {t(
                   'हमारे पास बड़ी टूरिस्ट बसों हेतु विशाल निजी गेटेड पार्किंग, ड्राइवर विश्राम कक्ष एवं थोक बुकिंग पर विशेष छूट उपलब्ध है।',
                   'Dedicated large gated parking for 52-seater tourist buses, driver rest facilities, and customized group discounts available.'
@@ -295,7 +295,7 @@ const Rooms = ({ onOpenBooking }) => {
           </div>
           <button
             onClick={() => onOpenBooking({ roomType: 'Group / Bus Booking' })}
-            className="btn-sacred-outline px-5 py-2.5 rounded-full text-xs font-bold shrink-0 cursor-pointer shadow-sm"
+            className="w-full md:w-auto btn-sacred-outline px-5 py-3 rounded-full text-xs font-bold shrink-0 cursor-pointer shadow-sm text-center"
           >
             {t('ग्रुप बुकिंग पूछताछ करें', 'Group Booking Inquiry')}
           </button>
