@@ -5,10 +5,17 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     try {
+      // Default to English on first load or version update
+      const migrated = localStorage.getItem('hotel_daksh_lang_v2_default_en');
+      if (!migrated) {
+        localStorage.setItem('hotel_daksh_lang_v2_default_en', 'true');
+        localStorage.setItem('hotel_daksh_lang', 'en');
+        return 'en';
+      }
       const saved = localStorage.getItem('hotel_daksh_lang');
-      return saved === 'en' ? 'en' : 'hi';
+      return saved === 'hi' ? 'hi' : 'en';
     } catch {
-      return 'hi';
+      return 'en';
     }
   });
 
