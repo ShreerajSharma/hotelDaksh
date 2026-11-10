@@ -126,7 +126,7 @@ const ContactMap = () => {
               {/* Direct Touchpoints (WhatsApp & Call) */}
               <div className="pt-5 border-t border-amber-600/15 space-y-3">
                 <a 
-                  href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20want%20to%20connect%20with%20Hotel%20Daksh%20Khatu." 
+                  href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20want%20to%20connect%20with%20Hotel%20Daksh%20Khatu." 
                   target="_blank" 
                   rel="noreferrer"
                   className="flex items-center justify-between p-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white transition-all shadow-md cursor-pointer"
@@ -146,7 +146,7 @@ const ContactMap = () => {
                 </a>
 
                 <a 
-                  href="tel:+919876543210" 
+                  href="tel:+918104053931" 
                   className="flex items-center justify-between p-3 rounded-2xl bg-white hover:bg-amber-50/70 border border-amber-500/30 transition-colors shadow-sm"
                 >
                   <div className="flex items-center gap-3">
@@ -155,7 +155,7 @@ const ContactMap = () => {
                       <div className="text-[10px] text-[#7c6a5d] uppercase font-bold">
                         {t('24 घंटे फ्रंट डेस्क हेल्पलाइन', '24/7 Front Desk Helpline')}
                       </div>
-                      <div className="text-xs sm:text-sm font-bold text-[#1c1512]">+91 98765 43210</div>
+                      <div className="text-xs sm:text-sm font-bold text-[#1c1512]">+91 81040 53931</div>
                     </div>
                   </div>
                   <ChevronRight className="w-4 h-4 text-amber-700" />

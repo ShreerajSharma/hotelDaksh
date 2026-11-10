@@ -46,7 +46,7 @@ const BookingModal = ({ isOpen, onClose, initialData = {} }) => {
         `💬 *Special Request / Notes:* ${notes || 'Khatu Shyam Pilgrimage'}%0A%0A` +
         `Please share room availability and best direct pilgrim rates. Jai Shree Shyam!`;
 
-    const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
+    const whatsappUrl = `https://wa.me/918104053931?text=${message}`;
     window.open(whatsappUrl, '_blank');
     onClose();
   };
@@ -105,7 +105,7 @@ const BookingModal = ({ isOpen, onClose, initialData = {} }) => {
               <input 
                 type="tel"
                 required
-                placeholder="+91 98765 XXXXX"
+                placeholder="+91 81040 XXXXX"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full bg-[#faf8f5] border border-amber-500/30 rounded-2xl px-3.5 py-2.5 text-xs sm:text-sm text-[#1c1512] placeholder-[#8c7b6f] focus:outline-none focus:border-amber-600 transition-colors"
@@ -206,10 +206,10 @@ const BookingModal = ({ isOpen, onClose, initialData = {} }) => {
           {/* Alternative Booking Options */}
           <div className="pt-3 border-t border-amber-600/15 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px]">
             <a 
-              href="tel:+919876543210"
+              href="tel:+918104053931"
               className="text-[#5c4a3e] hover:text-amber-800 font-bold flex items-center gap-1"
             >
-              <Phone className="w-3 h-3 text-amber-700" /> {t('फोन:', 'Phone:')} +91 98765 43210
+              <Phone className="w-3 h-3 text-amber-700" /> {t('फोन:', 'Phone:')} +91 81040 53931
             </a>
 
             <a 

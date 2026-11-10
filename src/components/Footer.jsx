@@ -97,7 +97,7 @@ const Footer = ({ onOpenBooking }) => {
               <li><a href="#why-choose" className="hover:text-amber-800 transition-colors font-bold text-amber-900">{t('होटल दक्ष ही क्यों? (तुलना)', 'Why Choose Us? (Comparison)')}</a></li>
               <li><a href="#gallery" className="hover:text-amber-800 transition-colors">{t('चित्र वीथिका (Gallery)', 'Photo Gallery')}</a></li>
               <li><a href="#contact" className="hover:text-amber-800 transition-colors">{t('स्थान, पता व मार्ग नक्शा', 'Location & Route Map')}</a></li>
-              <li><a href="tel:+919876543210" className="hover:text-amber-800 transition-colors">+91 98765 43210</a></li>
+              <li><a href="tel:+918104053931" className="hover:text-amber-800 transition-colors">+91 81040 53931</a></li>
             </ul>
           </div>
 

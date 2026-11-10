@@ -63,15 +63,15 @@ const Navbar = ({ onOpenBooking }) => {
           <div className="flex items-center gap-4">
             <LanguageToggle />
             <a 
-              href="tel:+919876543210" 
+              href="tel:+918104053931" 
               className="text-[#4a3b32] hover:text-amber-800 transition-colors flex items-center gap-1.5 font-medium"
             >
               <Phone className="w-3 h-3 text-amber-700" />
-              +91 98765 43210
+              +91 81040 53931
             </a>
             <span className="text-amber-300">•</span>
             <a 
-              href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20want%20to%20inquire%20about%20Hotel%20Daksh%20Khatu."
+              href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20want%20to%20inquire%20about%20Hotel%20Daksh%20Khatu."
               target="_blank" 
               rel="noreferrer"
               className="text-emerald-700 hover:text-emerald-800 transition-colors flex items-center gap-1 font-semibold"
@@ -126,7 +126,7 @@ const Navbar = ({ onOpenBooking }) => {
               <LanguageToggle compact={true} />
             </div>
             <a
-              href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20am%20interested%20in%20room%20booking%20at%20Hotel%20Daksh."
+              href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20am%20interested%20in%20room%20booking%20at%20Hotel%20Daksh."
               target="_blank"
               rel="noreferrer"
               className="text-xs font-semibold text-[#78350f] hover:text-amber-900 px-3 py-1.5 rounded-full border border-amber-600/30 hover:bg-amber-50 transition-all flex items-center gap-1.5"
@@ -202,14 +202,14 @@ const Navbar = ({ onOpenBooking }) => {
 
               <div className="grid grid-cols-2 gap-2">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918104053931"
                   className="py-2.5 rounded-xl border border-amber-600/30 text-center text-xs text-[#2c221e] font-bold bg-white flex items-center justify-center gap-1.5"
                 >
                   <Phone className="w-3.5 h-3.5 text-amber-800" />
                   <span>{t('कॉल करें', 'Call Us')}</span>
                 </a>
                 <a
-                  href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20want%20to%20inquire%20about%20Hotel%20Daksh%20Khatu."
+                  href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20want%20to%20inquire%20about%20Hotel%20Daksh%20Khatu."
                   target="_blank"
                   rel="noreferrer"
                   className="py-2.5 rounded-xl border border-emerald-500/40 text-center text-xs text-emerald-800 font-bold bg-emerald-50 flex items-center justify-center gap-1.5"

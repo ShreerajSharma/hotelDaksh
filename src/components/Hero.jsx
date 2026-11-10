@@ -99,7 +99,7 @@ const Hero = ({ onOpenBooking }) => {
           
           <div className="grid grid-cols-2 gap-2">
             <a
-              href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20want%20to%20book%20a%20room%20at%20Hotel%20Daksh%20Khatu."
+              href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20want%20to%20book%20a%20room%20at%20Hotel%20Daksh%20Khatu."
               target="_blank"
               rel="noreferrer"
               className="bg-white hover:bg-emerald-50 border border-emerald-500/40 text-emerald-800 py-2.5 px-3 rounded-full text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs transition-colors"

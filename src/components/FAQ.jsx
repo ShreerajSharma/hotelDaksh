@@ -38,8 +38,8 @@ const FAQ = ({ onOpenBooking }) => {
     {
       qHi: 'बिना कमीशन सीधे होटल से कमरा कैसे बुक कर सकते हैं?',
       qEn: 'How can I book a room directly without any commission?',
-      aHi: 'आप हमारी वेबसाइट के माध्यम से सीधे WhatsApp (+91 98765 43210) पर संपर्क कर सकते हैं। सीधे बुकिंग पर कोई मध्यस्थ कमीशन नहीं लगता और आपको सर्वोत्तम रियायती दरें प्राप्त होती हैं। इसके अतिरिक्त आप MakeMyTrip के अधिकृत पेज से भी बुकिंग कर सकते हैं।',
-      aEn: 'You can directly connect with our front desk via WhatsApp (+91 98765 43210) or call us. Direct reservations eliminate middleman charges and ensure best direct pilgrim rates. You can also book via our verified MakeMyTrip listing.',
+      aHi: 'आप हमारी वेबसाइट के माध्यम से सीधे WhatsApp (+91 81040 53931) पर संपर्क कर सकते हैं। सीधे बुकिंग पर कोई मध्यस्थ कमीशन नहीं लगता और आपको सर्वोत्तम रियायती दरें प्राप्त होती हैं। इसके अतिरिक्त आप MakeMyTrip के अधिकृत पेज से भी बुकिंग कर सकते हैं।',
+      aEn: 'You can directly connect with our front desk via WhatsApp (+91 81040 53931) or call us. Direct reservations eliminate middleman charges and ensure best direct pilgrim rates. You can also book via our verified MakeMyTrip listing.',
       tag: { hi: 'सीधी बुकिंग', en: 'Direct Booking' }
     },
     {
@@ -143,7 +143,7 @@ const FAQ = ({ onOpenBooking }) => {
             </div>
           </div>
           <a
-            href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20have%20a%20question%20about%20Hotel%20Daksh%20Khatu."
+            href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20have%20a%20question%20about%20Hotel%20Daksh%20Khatu."
             target="_blank"
             rel="noreferrer"
             className="btn-kesar-gold px-5 py-2.5 rounded-full text-xs font-bold flex items-center gap-2 cursor-pointer shadow-sm shrink-0"

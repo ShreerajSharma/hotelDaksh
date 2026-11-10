@@ -58,7 +58,7 @@ function App() {
       {/* Spiritual Mobile Floating Quick Action Capsule (White Theme) */}
       <div className="fixed bottom-4 inset-x-3 z-40 sm:hidden flex items-center gap-2 p-1.5 rounded-full bg-white/95 backdrop-blur-xl border border-amber-500/40 shadow-2xl shadow-amber-950/20 max-w-sm mx-auto">
         <a 
-          href="tel:+919876543210"
+          href="tel:+918104053931"
           className="flex-1 py-2.5 px-3 rounded-full bg-[#faf8f5] text-[#1c1512] font-bold flex items-center justify-center gap-1.5 text-xs tracking-tight border border-amber-600/25 shadow-sm"
         >
           <Phone className="w-3.5 h-3.5 text-amber-700" />
@@ -72,7 +72,7 @@ function App() {
           <span>{t('कमरा बुक करें', 'Book Room')}</span>
         </button>
         <a 
-          href="https://wa.me/919876543210?text=Jai%20Shree%20Shyam!%20I%20want%20to%20reserve%20a%20room%20at%20Hotel%20Daksh%20Khatu."
+          href="https://wa.me/918104053931?text=Jai%20Shree%20Shyam!%20I%20want%20to%20reserve%20a%20room%20at%20Hotel%20Daksh%20Khatu."
           target="_blank"
           rel="noreferrer"
           className="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-500/40 text-emerald-700 flex items-center justify-center shrink-0 shadow-sm"
