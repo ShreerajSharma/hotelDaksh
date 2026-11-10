@@ -10,8 +10,8 @@ const FAQ = ({ onOpenBooking }) => {
     {
       qHi: 'श्री खाटू श्याम जी मुख्य मंदिर से होटल दक्ष की दूरी कितनी है?',
       qEn: 'How far is Hotel Daksh from Shree Khatu Shyam Ji Temple?',
-      aHi: 'होटल दक्ष मुख्य मंदिर से मात्र 1.5 किमी (लगभग 10 मिनट की सुखद व सुगम पैदल दूरी) पर आलोदा चौराहा, बीएसएनएल टावर के पास स्थित है। होटल के ठीक सामने से मंदिर हेतु 24 घंटे ई-रिक्शा (E-Rickshaw) भी सुलभ उपलब्ध रहते हैं, जिससे बुजुर्गों व बच्चों को कोई असुविधा नहीं होती।',
-      aEn: 'Hotel Daksh is located just 1.5 km (a comfortable 10-minute walk) from the Main Temple at Aloda Choraha, near BSNL Tower. Round-the-clock E-rickshaws are readily available right at our doorstep for elderly guests and families.',
+      aHi: 'होटल दक्ष मुख्य मंदिर से मात्र 500 मीटर (लगभग 5 से 7 मिनट की सुखद व सुगम पैदल दूरी) पर आलोदा चौराहा, बीएसएनएल टावर के पास स्थित है। होटल के ठीक सामने से मंदिर हेतु 24 घंटे ई-रिक्शा (E-Rickshaw) भी सुलभ उपलब्ध रहते हैं, जिससे बुजुर्गों व बच्चों को कोई असुविधा नहीं होती।',
+      aEn: 'Hotel Daksh is located just 500 meters (a comfortable 5-7 minute walk) from the Main Temple at Aloda Choraha, near BSNL Tower. Round-the-clock E-rickshaws are readily available right at our doorstep for elderly guests and families.',
       tag: { hi: 'मंदिर दूरी', en: 'Proximity' }
     },
     {

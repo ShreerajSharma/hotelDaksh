@@ -83,7 +83,7 @@ const Hero = ({ onOpenBooking }) => {
         <div className="inline-flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-2xl sm:rounded-full bg-amber-500/15 backdrop-blur-sm border border-amber-600/30 text-amber-950 font-bold text-[11px] sm:text-sm tracking-wide mb-4 max-w-full text-center">
           <span className="font-temple tracking-wider uppercase">Hotel Daksh</span>
           <span>•</span>
-          <span>{t('मंदिर से मात्र 10 मिनट पैदल दूरी', '10 Min Walk to Khatu Shyam Mandir')}</span>
+          <span>{t('मंदिर से मात्र 500 मीटर पैदल दूरी', 'Just 500m Walk to Khatu Mandir')}</span>
           <span>•</span>
           <span>{t('फ्री गेटेड पार्किंग', 'Free Gated Parking')}</span>
         </div>
@@ -91,8 +91,8 @@ const Hero = ({ onOpenBooking }) => {
         {/* Devotional Tagline with Clean Backing */}
         <p className="max-w-2xl text-xs sm:text-sm text-[#26160c] font-bold leading-relaxed mb-6 tracking-wide [text-shadow:_0_1px_8px_rgba(255,255,255,1)]">
           {t(
-            'श्री खाटू श्याम जी मंदिर से मात्र 10 मिनट की सुखद पैदल दूरी (आलोदा चौराहा, बीएसएनएल टावर के पास)। आपकी मंगलमय यात्रा हेतु वातानुकूलित कमरे, 24 घंटे गर्म पानी, सुरक्षित गेटेड पार्किंग व शुद्ध सात्विक भोजन।',
-            'Just a 10-minute peaceful walk to Shree Khatu Shyam Ji Temple (Near BSNL Tower, Aloda Chauraha). Tailored for your sacred pilgrimage with AC suites, 24/7 hot water geyser, free gated parking & pure sattvik meals.'
+            'श्री खाटू श्याम जी मंदिर से मात्र 500 मीटर की सुखद पैदल दूरी (आलोदा चौराहा, बीएसएनएल टावर के पास)। आपकी मंगलमय यात्रा हेतु वातानुकूलित कमरे, 24 घंटे गर्म पानी, सुरक्षित गेटेड पार्किंग व शुद्ध सात्विक भोजन।',
+            'Just a 500-meter peaceful walk to Shree Khatu Shyam Ji Temple (Near BSNL Tower, Aloda Chauraha). Tailored for your sacred pilgrimage with AC suites, 24/7 hot water geyser, free gated parking & pure sattvik meals.'
           )}
         </p>
 
@@ -192,8 +192,8 @@ const Hero = ({ onOpenBooking }) => {
           <div className="flex items-center justify-center gap-2">
             <Clock className="w-4 h-4 text-amber-700 shrink-0" />
             <div className="text-left">
-              <div className="font-temple text-sm sm:text-base font-bold text-amber-950">{t('10 मिनट', '10 Min')}</div>
-              <div className="text-[10px] text-[#5c4a3e] font-semibold">{t('पैदल मंदिर (1.5 km)', 'Walk to Mandir (1.5 km)')}</div>
+              <div className="font-temple text-sm sm:text-base font-bold text-amber-950">{t('500 मीटर', '500 Meters')}</div>
+              <div className="text-[10px] text-[#5c4a3e] font-semibold">{t('पैदल मंदिर (500 meter)', 'Walk to Mandir (500m)')}</div>
             </div>
           </div>
 

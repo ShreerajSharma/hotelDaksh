@@ -109,7 +109,7 @@ const ContactMap = () => {
               <div className="pt-5 border-t border-amber-600/15 grid grid-cols-2 gap-3 text-xs">
                 <div className="p-3 bg-white rounded-2xl border border-amber-500/15 shadow-sm">
                   <div className="text-[10px] text-[#7c6a5d] font-bold">{t('खाटू श्याम मुख्य मंदिर', 'Main Shyam Mandir')}</div>
-                  <div className="text-xs font-bold text-amber-900">{t('10 मिनट पैदल (1.5 km)', '10 Min Walk (1.5 km)')}</div>
+                  <div className="text-xs font-bold text-amber-900">{t('500 मीटर पैदल (5-7 मिनट)', '500m Walk (5-7 mins)')}</div>
                 </div>
                 <div className="p-3 bg-white rounded-2xl border border-amber-500/15 shadow-sm">
                   <div className="text-[10px] text-[#7c6a5d] font-bold">{t('रींगस जंक्शन स्टेशन', 'Ringas Junction (RGS)')}</div>

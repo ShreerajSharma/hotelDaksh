@@ -22,8 +22,8 @@ const WhyChooseUs = ({ onOpenBooking }) => {
     {
       feature: { hi: 'मंदिर पहुंच व जाम से मुक्ति', en: 'Temple Access & Traffic Clearance' },
       hotelDaksh: {
-        hi: 'आलोदा चौराहा से सीधा सुगम मार्ग, मात्र 10 मिनट की पैदल दूरी (1.5 km), ई-रिक्शा होटल के द्वार पर',
-        en: 'Direct highway access via Aloda Chauraha, 10 min easy walk (1.5 km), E-rickshaw at gate'
+        hi: 'आलोदा चौराहा से सीधा सुगम मार्ग, मात्र 500 मीटर की सुखद पैदल दूरी, ई-रिक्शा होटल के द्वार पर',
+        en: 'Direct access via Aloda Chauraha, just 500m easy walk, E-rickshaw at gate'
       },
       others: {
         hi: 'मंदिर की संकरी गलियों में भारी पुलिस बैरिकेड्स; एकादशी व मेले में गाड़ी अंदर नहीं जा सकती',

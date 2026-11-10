@@ -43,7 +43,7 @@ const About = () => {
                 {t('अद्वितीय पावन स्थिति (Sacred Location)', 'Prime Sacred Location')}
               </span>
               <h3 className="font-temple text-2xl sm:text-3xl font-bold text-[#1c1512] mb-3">
-                {t('मंदिर से मात्र 10 मिनट की पैदल दूरी।', 'Just 10 Minutes Walk from Temple.')}
+                {t('मंदिर से मात्र 500 मीटर की पैदल दूरी।', 'Just 500 Meters Walk from Temple.')}
               </h3>
               <p className="text-xs sm:text-sm text-[#5c4a3e] leading-relaxed mb-6 font-normal">
                 {t(
@@ -54,8 +54,8 @@ const About = () => {
               
               <div className="grid grid-cols-3 gap-3 pt-4 border-t border-amber-600/15 text-center">
                 <div className="p-2 bg-[#faf8f5] rounded-xl border border-amber-500/15">
-                  <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('10 मिनट', '10 Mins')}</div>
-                  <div className="text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('मंदिर (1.5 km)', 'Temple (1.5 km)')}</div>
+                  <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('500 मीटर', '500m')}</div>
+                  <div className="text-[10px] text-[#7c6a5d] uppercase tracking-wider font-bold">{t('मंदिर (500 meter)', 'Temple (500m)')}</div>
                 </div>
                 <div className="p-2 bg-[#faf8f5] rounded-xl border border-amber-500/15">
                   <div className="font-temple text-lg sm:text-xl font-bold text-amber-800">{t('12 मिनट', '12 Mins')}</div>
